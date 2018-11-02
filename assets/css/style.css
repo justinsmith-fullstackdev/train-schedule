@@ -1,0 +1,32 @@
+
+body {
+	background-image: url(../images/square_BG.png);
+}
+
+.header img {
+	width:100%;
+}
+
+.panel {
+	border: 1px solid #CBFF6C;
+	border-radius: 5px;
+}
+
+.panel-heading {
+	background-color: #CBFF6C;
+	padding-left:10px;
+	padding-bottom:10px;
+	padding-top:5px;
+}
+
+.addTrain, .addTrainForm {
+	margin-top:10px;
+}
+
+.addTrainLabels {
+	font-weight: bold;
+}
+
+.btn-orange {
+	background-color: #FFC300 ;
+}

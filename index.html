@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>HW Train Scheduler </title>
+    
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW-Train Scheduler - Bryan Castleman</title>
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+			
+  </head>
+
+  <body>
+    
+    <div class="row">
+    	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+    	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+    		<div class="header">
+	    		<img src="assets/images/orangexpt1k.png" class="img-responsive" alt="train">
+    		</div>
+    		
+    		<div class="panel">
+	  			<!-- Default panel contents -->
+		  		<div class="panel-heading">Current Train Schedule</div>
+				<div class="panel-body"></div>
+					<!-- Table -->
+					<table class="table table-hover" id="train-table">
+				    <thead>
+				      <tr>
+				        <th>Train Name</th>
+				        <th>Destination</th>
+				        <th>Frequency (min)</th>
+				        <th>Next Arrival</th>
+				        <th>Minutes Away</th>
+				      </tr>
+				    </thead>
+				    <tbody>				      			     
+				    </tbody>
+				  </table>
+				</div>
+			</div>
+    	</div>
+		
+    	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+    </div>
+
+    <div class="row">
+    	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+    	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+    		<div class="panel addTrain">
+    			<div class="panel-heading">Add Train</div>
+    			<div class="panel-body">
+    				<form class="col-md-12 addTrainForm">
+					  <div class="form-group">
+					    <label for="train-name-input" class="addTrainLabels">Train Name</label>
+					    <input type="text" class="form-control" id="train-name-input" placeholder="">
+					  </div>
+					  <div class="form-group">
+					    <label for="destination-input" class="addTrainLabels">Destination</label>
+					    <input type="text" class="form-control" id="destination-input" placeholder="">
+					  </div>
+					  <div class="form-group">
+					    <label for="first-train-input" class="addTrainLabels">First Train Time (HH:mm - military time)</label>
+					    <input type="text" class="form-control" id="first-train-input" placeholder="">
+					  </div>
+					  <div class="form-group">
+					    <label for="frequency-input2" class="addTrainLabels">Frequency (min)</label>
+					    <input type="text" class="form-control" id="frequency-input" placeholder="">
+					  </div>
+					  <button type="submit" class="btn btn-orange" id="add-train-btn">Submit</button>
+					</form>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>   	
+    </div>
+    
+		
+	
+	<script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+	
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+	<script src="assets/javascript/app.js"></script>
+  </body>
+
+</html>
+
