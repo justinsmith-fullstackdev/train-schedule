@@ -1,7 +1,7 @@
 # TrainScheduler
 
 ## Live Link 
- - https://justinsmith-fullstackdev.github.io/train-scheduler/.
+ - https://justinsmith-fullstackdev.github.io/train-schedule/
 
 ## Description on how to use the app
 
